@@ -1,9 +1,9 @@
-package day02;
+package day02; // 패키지명
 
 import java.util.Scanner;
 
-public class Example2 {
-    public static void main(String[] args) {
+public class Example2 { // class start
+    public static void main(String[] args) { // main start
 /*
         // 입력함수 : 콘솔화면에서 키보드로부터 입력받은 방법
         // 1. new Scanner( System.in ); : 시스템(컴퓨터)로 부터 입력관련 기능(함수) 제공하는 객체
