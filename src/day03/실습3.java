@@ -202,8 +202,8 @@ public class 실습3 {//class start
 //        double height = scan.nextDouble();
 //        System.out.println("몸무게(kg): ");
 //        double weight = scan.nextDouble();
-//       // System.out.println("BMI 지수: "+weight/((height/100)*(height/100)) );
-//        System.out.printf("BMI 지수: %.2f", weight/((height/100)*(height/100)) );
+//       // System.out.println("BMI 지수: "+weight/((height/100.0)*(height/100.0)) );
+//        System.out.printf("BMI 지수: %.2f", weight/((height/100.0)*(height/100.0)) );
 
 //        [문제 14] Scanner를 이용해 아이디와 이메일을 String으로 입력받습니다. 아이디가 "admin"이거나 또는
 //        이메일이 "admin@test.com"이면 "관리자", 그렇지 않으면 "일반 사용자"를 출력하시오.
