@@ -126,7 +126,7 @@ public class 실습2 { //class start
         System.out.printf("이름: %s\n",name);
         System.out.printf("나이: %d\n",age);
         System.out.println("키: "+height+"cm");
-        System.out.printf("키: %fcm\n",height);
+        System.out.printf("키: %fcm\n",height); // f
         System.out.printf("프로그래머 여부: %s",pro);
     }//main end
 }//class end
