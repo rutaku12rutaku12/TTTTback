@@ -69,7 +69,7 @@ public class BoardService1 { // class start
         String content1 = null; String content2 = null; String content3 = null;
         String writer1 = null; String writer2 = null; String writer3 = null;
 
-        for( ; ; ) { // 무한루프 시작 // for start
+        for( ; ; ) { // (1)무한루프 시작 // for start
             // (2) 출력
             System.out.println("============ My Community ============");
             System.out.println("  1.게시물쓰기 | 2.게시물출력");
