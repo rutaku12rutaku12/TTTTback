@@ -89,7 +89,7 @@ public static void main(String[] args) { // main start
                     board.content = content;
                     board.writer = writer;
                     boolean check = false; // true : 저장성공 , false : 저장실패
-                    for( int index = 9; index <= boards.length -1 ; index++){  // (6) 배열내 빈공간을 찾아서 빈공간에 객체 대입
+                    for( int index = 0; index <= boards.length -1 ; index++){  // (6) 배열내 빈공간을 찾아서 빈공간에 객체 대입
                         if( boards[index] == null ) { // index번째 요소가 비어(null) 있으면
                             boards[index] = board; // 해당 index번째의 생성한 객체를 대입한다.
                             check = true; // 상태변경
