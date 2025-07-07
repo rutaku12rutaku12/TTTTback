@@ -47,21 +47,27 @@ public class Example1 { // class start
         // [3] 배열의 주소값 호출
         System.out.println( array1 );   // [I@4c873330 : 객체의 주소(컴퓨터가 사용하는 위치정보)값
         System.out.println( array2 );   // [Ljava.lang.String;@119d7047 : 객체의 주소값
+
         // [4] 배열내 요소들을 문자열로 반환
         System.out.println( Arrays.toString( array1) );     // [0, 0, 0] : 배열내 요소값들을 문자열로 반환
         System.out.println( Arrays.toString( array2 ) );    // [봄, 여름, 가을, 겨울]
+
         // [5] 특정한 요소 값 반환
         System.out.println( array1[0] );    // 0
         System.out.println( array2[0] );    // 0
+
         // [6] 배열내 총 요소 개수 반환
         System.out.println( array2.length );    // 배열내 길이 반환
+
         // [7] 특정한 요소 값 수정
         array1[0] = 10;
         System.out.println( array1[0] );    // 10
         array2[0] = "spring";
         System.out.println( array2[0] );    // spring
+
         // [8] 배열은 삭제/추가 할수 없다.
         // array1[3] = 40; // 오류발생 ; Index 3 out of bounds for length 3
+
         // [9] 일반 for문 과 향상된 for문 의 배열 활용법
         for( int index = 0 ; index <= array1.length - 1 ; index++){ // index는 0부터 마지막 인덱스까지 1씩 증가 반복
             int value = array1[index];  // index번째 요소 값 호출
