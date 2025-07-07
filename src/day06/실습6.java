@@ -168,11 +168,19 @@ public class 실습6 {  // class start
         String[] carNumbers = {"210어7125", "142가7415", "888호8888", "931나8234"};
         int[] usageMinutes = {65, 30, 140, 420};
 
-//        for( int index = 0 ; index<= carNumbers.length-1; index++){
-//            String car= carNumbers[index];
-//            System.out.print(car);
-//            for( int money = )
-//        }
+        int money = 0;
+        for( int index = 0 ; index<= carNumbers.length-1; index++){
+            String car= carNumbers[index]; // index 번째 차량번호 추출
+            System.out.print(car); // index 번째 차량번호 출력
+
+            if(usageMinutes[index]>=380){
+                money = 20000;
+                System.out.println(money);
+            }else if(usageMinutes[index]==30){
+                money = 1000;
+            }else{money=(usageMinutes[index]-30)/10*500}
+            System.out.println(money);
+        }
 
 
 
