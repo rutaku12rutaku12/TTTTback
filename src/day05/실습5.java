@@ -149,6 +149,22 @@ public class 실습5 { // class start
 //            실행 예시:
 //            1 회 입력 :자바 2 회 입력 :자바스크립트 3 회 입력 :파이썬 4 회 입력 :HTML 5 회 입력 :CSS 6 회 입력 :C언어 7 회 입력 :end[안내] 프로그램을 종료 합니다.[총 6
 //            회 입력]
+//        int count = 0;
+//        for( ; ; ){ // 무한루프
+//            Scanner scan = new Scanner(System.in);
+//                System.out.println("문자열을 입력하세요. : ");
+//                String 값 = scan.next();
+//
+//                if( 값.equals("end")){
+//                    System.out.printf("[안내] 프로그램을 종료 합니다. [총 %d회 입력]",count);
+//                    break;
+//                } // if end
+//            count++; // 값이 end가 아니면 count 값을 더한다.
+//            System.out.println(count+"회 입력 : "+값);
+//
+//        }// for end
+
+
 
 //            [초기값] : 생략 , [조건문] : 생략 , [증감식] : 생략 , [실행문] : 입력, 출력, "end"이면 break
 //            int count = 0; // 반복문 밖에서 반복(입력) 횟수 변수를 선언하고
@@ -165,12 +181,6 @@ public class 실습5 { // class start
 //                    count++; // count +=1       , count = count + 1
 //            } //for end
 
-//            Scanner scan = new Scanner(System.in);
-//            int count = 0;
-//            for( ; ; ){
-//
-//                    if( scan.equals("end"))break;
-//            };
 
 //
 //      [문제 10]아래 선언된 4 개의 변수는 7 월 각 주차별 매출액입니다.각 매출액을 '만원' 단위로 변환하고, 백만원 단위마다 '■' 문자로 시각화하여 아래 출력 예시와 같이 보고서를 출력하시오.
@@ -183,6 +193,41 @@ public class 실습5 { // class start
 //            매출액을 10000 으로 나눈 몫을 사용하여 '만원' 단위를 계산합니다.
 //            '만원' 단위 값을 다시 100 으로 나눈 몫만큼 for문을 사용하여 '■' 문자를 반복 출력합니다.출력 예시:
 //            -------7 월 매출액 -------1 주차: ■■■353 만원 2 주차: ■■■■■■■■■912 만원 3 주차: ■■■■■518 만원 4 주차: ■■■■■■■■■■■1173 만원
+
+
+//                 int july1 = 3532100;
+//                 int july2 = 9123700;
+//                 int july3 = 5183400;
+//                 int july4 = 11738700;
+//
+//                int jul1만원 = july1/10000;
+//                int jul2만원 = july2/10000;
+//                int jul3만원 = july3/10000;
+//                int jul4만원 = july4/10000;
+//
+//        System.out.println("-------7 월 매출액 -------");
+//        System.out.print("1 주차:");
+//                for (int i =0; i<=jul1만원/100; i++){
+//                    System.out.print("■");}
+//                    System.out.println(jul1만원+"만원");
+//        System.out.print("2 주차:");
+//                for (int i =0; i<=jul2만원/100; i++){
+//                    System.out.print("■");}
+//                     System.out.println(jul2만원+"만원");
+//        System.out.print("3 주차:");
+//                for (int i =0; i<=jul3만원/100; i++){
+//                    System.out.print("■");}
+//                    System.out.println(jul3만원+"만원");
+//        System.out.print("4 주차:");
+//                for (int i =0; i<=jul4만원/100; i++){
+//                    System.out.print("■");}
+//                    System.out.println(jul4만원+"만원");
+
+
+
+
+
+
 
 //              [초기값] : 1부터 , [조건문] : 100나눈값까지 , [증감식] : 1씩증가 , [실행문] : ㅁ+한자키 - ■ 출력
 //
@@ -229,6 +274,38 @@ public class 실습5 { // class start
 //            --------------------------------
 //            - 선택 >
 //            4 프로그램을 종료합니다.
+        int balance = 0;
+        for( ; ; ){ // 무한루프
+            System.out.println("--------------------------------"); // 반복되는 부분 출력
+            System.out.println("- 1:입금 | 2:출금 | 3:잔고 | 4:종료");
+            System.out.println("--------------------------------");
+            System.out.println("- 선택 >");
+
+            Scanner scan = new Scanner(System.in);
+            int choose = scan.nextInt(); // 스캐너로 숫자 입력받기
+
+            if( choose == 1 ) { // 1번 선택 시 출력
+                System.out.println("입금액:");
+                int plus = scan.nextInt();
+                balance+=plus;
+            }else if( choose == 2 ){ // 2번 선택 시 출력
+                System.out.println("출금액:");
+                int minus = scan.nextInt();
+                if(balance<minus){
+                    System.out.println("잔고보다 큰 금액을 출금할 수 없습니다.");
+                }else{balance-=minus;}
+            }else if( choose == 3 ){ // 3번 선택 시 출력
+                System.out.println("3 잔고 > "+balance);
+            }else if( choose == 4 ){ // 4번 선택 시 출력
+                System.out.println("4 프로그램을 종료합니다.");
+                break; // 반복문 종류
+            }
+
+        }// 무한루프 for end
+
+
+
+
 
             // 11.
                 // step1: 시각적인 요소 ( 메인화면 )
