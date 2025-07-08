@@ -34,7 +34,7 @@ public class 실습8 { // class start
         System.out.println( result6 );
 
         // [7]
-        Visualizer = new Visualizer();
+        //Visualizer = new Visualizer();
 
 
         // [8]

@@ -324,16 +324,16 @@ public class 실습4 { // class start
 //        출력 예시:
 //        4, 8, 17
 
-
-        System.out.println("1번째 정수: "); int a = scan.nextInt();// scan으로 입력받은 수를 변수에 저장
-        System.out.println("2번째 정수: "); int b = scan.nextInt();
-        System.out.println("3번째 정수: "); int c = scan.nextInt();
-
-
-        if(a>b){ int temp=a; a=b; b=temp;};
-        if(a>c){ int temp=a; a=c; c=temp;};
-        if(b>c){ int temp=b; b=c; c=temp;};
-        System.out.printf("%d %d %d", a , b, c);
+//
+//        System.out.println("1번째 정수: "); int a = scan.nextInt();// scan으로 입력받은 수를 변수에 저장
+//        System.out.println("2번째 정수: "); int b = scan.nextInt();
+//        System.out.println("3번째 정수: "); int c = scan.nextInt();
+//
+//
+//        if(a>b){ int temp=a; a=b; b=temp;};
+//        if(a>c){ int temp=a; a=c; c=temp;};
+//        if(b>c){ int temp=b; b=c; c=temp;};
+//        System.out.printf("%d %d %d", a , b, c);
 
 
 
@@ -369,9 +369,13 @@ public class 실습4 { // class start
         System.out.println("플레이어1 : 0(가위) 1(바위) 2(보) 숫자입력"); int p1 = scan.nextInt();
         System.out.println("플레이어2 : 0(가위) 1(바위) 2(보) 숫자입력"); int p2 = scan.nextInt();
 
-//        if( p1 == p2) {
-//            System.out.println("무승부");
-//        }else if( (p1==0 && p2==1 )|| ){};
+        if( p1 == p2) {
+            System.out.println("무승부");
+        }else if( (p1==0 && p2==1 )|| (p1==1 && p2==2)|| (p1==2 && p2==0)){
+            System.out.println("플레이어2 승리");
+        }else{
+            System.out.println("플레이어1 승리");
+        }
 
 
 
