@@ -79,23 +79,39 @@ public class 실습7 { // class start
                 System.out.println(player2.name);
             }
 
-        MenuItem item1 = new MenuItem();
-        MenuItem item2 = new MenuItem();
-        MenuItem item3 = new MenuItem();
-        item1.name = "김치찌개"; item1.price= 8000; item1.isSignature=true;
-        item2.name = "된장찌개"; item2.price= 8000; item2.isSignature=false;
-        item3.name = "계란찜"; item3.price= 3000; item3.isSignature=false;
-        MenuItem[] items = {item1, item2, item3 };
-        for( int i=0; i<=items.length-1  ; i++){
-            if(items[i].isSignature == true ){
-                System.out.println("[대표메뉴] ["+items[i].name+"] : [가격]"+items[i].price+"원");}// if end
-        }// for end
+//        MenuItem2 menu1 = new MenuItem2(); // MenuItem 객체 3개를 생성
+//        MenuItem2 menu2 = new MenuItem2();
+//        MenuItem2 menu3 = new MenuItem2();
+//        menu1.name = "김치찌개"; menu1.price = 8000; menu1.isSignature = true;  // 첫 번째는 김치찌개 8000 true
+//        menu2.name = "된장찌개"; menu2.price = 8000; menu2.isSignature = false; // 두 번째는 된장찌개 8000 false
+//        menu3.name = "계란찜"; menu3.price = 3000; menu3.isSignature = false; // 세 번재는 계란찜 3000 false
+//        if ( menu1.isSignature == true ) // if문을 사용하여 isSignature 가 true인 메뉴 객체를 찾아 출력
+//            System.out.printf("[%s] [%s] : [%d]원 \n",
+//                    menu1.name , menu1.isSignature, menu1.price);
+//        if ( menu2.isSignature == true ) // if문을 사용하여 isSignature 가 true인 메뉴 객체를 찾아 출력
+//            System.out.printf("[%s] [%s] : [%d]원 \n",
+//                    menu2.name , menu2.isSignature, menu2.price);
+//        if ( menu3.isSignature == true ) // if문을 사용하여 isSignature 가 true인 메뉴 객체를 찾아 출력
+//            System.out.printf("[%s] [%s] : [%d]원 \n",
+//                    menu3.name , menu3.isSignature, menu3.price);
+
+//        MenuItem item1 = new MenuItem();
+//        MenuItem item2 = new MenuItem();
+//        MenuItem item3 = new MenuItem();
+//        item1.name = "김치찌개"; item1.price= 8000; item1.isSignature=true;
+//        item2.name = "된장찌개"; item2.price= 8000; item2.isSignature=false;
+//        item3.name = "계란찜"; item3.price= 3000; item3.isSignature=false;
+//        MenuItem[] items = {item1, item2, item3 };
+//        for( int i=0; i<=items.length-1  ; i++){
+//            if(items[i].isSignature == true ){
+//                System.out.println("[대표메뉴] ["+items[i].name+"] : [가격]"+items[i].price+"원");}// if end
+//        }// for end
 
 
 
-    UserProfile user = new UserProfile();
+    UserProfile user = new UserProfile(); // UserProfile 객체 하나 생성
 
-        Scanner scan = new Scanner(System.in);
+        Scanner scan = new Scanner(System.in); // Scanner를 사용하여 사용자로부터 입력
         System.out.println("이름 입력: ");
         String name1 = scan.next();
         System.out.println("나이 입력: ");
@@ -105,9 +121,9 @@ public class 실습7 { // class start
 
         user.name=name1; user.age=age1; user.mbti=mbti1;
         System.out.println("--- 프로필 ---");
-        System.out.println("이름: " + name1);
-        System.out.println("나이: " + age1);
-        System.out.println("MBTI: " + mbti1);
+        System.out.println("이름: " + user.name);
+        System.out.println("나이: " + user.age);
+        System.out.println("MBTI: " + user.mbti);
 
 
 
