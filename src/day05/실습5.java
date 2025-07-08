@@ -61,7 +61,17 @@ public class 실습5 { // class start
 //                            break;      // 가장 가까운 반복문{} 탈출/종료
 //                    };
 //            };
-        for(int i=1; i<=100;i++);
+//        int sum=0;
+//        for( int i=1; i<=100; i++) {
+//            sum += i;
+//            if (sum > 100) {
+//                System.out.println(i);
+//                System.out.println(sum);
+//                break;
+//            };
+//
+//        };
+
 
 //
 //[문제 7]중첩 for문을 사용하여 아래와 같이 별 ( *)로 이루어진 직각삼각형을 출력하시오.
@@ -73,6 +83,7 @@ public class 실습5 { // class start
 //      ****                    4       1 2 3 4
 //      *****                   5       1 2 3 4 5
 //
+
              // 7. [초기값] : , [조건문] : , [증감식] : , [실행문] :
 
 //         줄  [초기값] : 1부터 , [조건문] : 5까지 , [증감식] : 1씩증가 , [실행문] : 줄바꿈
@@ -84,6 +95,14 @@ public class 실습5 { // class start
 //                    System.out.println();     // 줄바꿈 처리
 //
 //            }; // for end
+//
+//        for (int i=1 ; i<=5 ; i++){
+//            for(int j=1; j<=i; j++){
+//                System.out.print("★");
+//            }
+//            System.out.println();
+//        }
+
 
 //[문제 8]중첩 for문을 사용하여 아래와 같이 별 ( *)로 이루어진 역직각삼각형을 출력하시오.
 //            출력 예시:
@@ -110,6 +129,14 @@ public class 실습5 { // class start
 //                };
 //                System.out.println();
 //        };
+
+//        for( int i = 1; i<=5; i++){
+//            for(int j =1; j<=5-i+1; j++) {
+//                System.out.print("★");
+//            }
+//            System.out.println();
+//        }
+
 
 //
 //
