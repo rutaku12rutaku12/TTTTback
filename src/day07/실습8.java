@@ -34,10 +34,18 @@ public class 실습8 { // class start
         System.out.println( result6 );
 
         // [7]
-        //Visualizer = new Visualizer();
+        Visualizer output = new Visualizer();
+        String result7 = output.getStars(3);
+        System.out.println(result7);
 
 
         // [8]
+
+        ParkingLot cash1 = new ParkingLot();
+        int result65 = cash1.calculateFee(65);
+        System.out.println(result65);
+        int result140 = cash1.calculateFee(140);
+        System.out.println(result140);
 
 
 

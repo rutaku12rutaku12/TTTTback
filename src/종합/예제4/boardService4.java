@@ -69,7 +69,7 @@ public class boardService4 { // class start
 //                ------------------------------------
 
         // (5) .
-            // 1. content 와 writer 멤버변수를 갖는 객체 필요하므로 Board클래스 선언
+            // 1. content 와 writer 멤버변수를 갖는 객체 필요하므로 Board 클래스 선언
             // 2. board 클래스 객체를 100개 저장하는 배열을 controller 선언 * 추후 : 데이터베이스(외부저장소) 활용
             // 3. doPost() 와 doGet() 메소드를 호출하기 위한 객체 생성
         BoardController bs = new BoardController();
@@ -86,7 +86,7 @@ public class boardService4 { // class start
                 System.out.println("작성자:");
                 String writer = scan.next();
 
-                // (6) * doPost 메소드를 호출해서 등록 처리후 결과를 받는다.
+                // (6) * doPost 메소드를 호출해서 등록 처리 후 결과를 받는다.
 
                 boolean result = // doPost 메소드가 실행후 결과를 result 에 저장,
                     bs.doPost( content , writer ); // 입력받은 두 값을 인수로 전달
@@ -95,7 +95,6 @@ public class boardService4 { // class start
                 }else{ // doPost 에서 false 반환이면
                     System.out.println("[경고] 글쓰기 실패");
                 }
-                System.out.println("[안내] 글쓰기 성공");
             }else if( choose == 2 ){
                 System.out.println("============= 게시물 목록 =============");
                 Board[] boards = bs.doGet();
@@ -107,7 +106,7 @@ public class boardService4 { // class start
                         System.out.println("작성자 : " + board.writer);
                         System.out.println("내용 : " + board.content);
                         System.out.println("------------------------------------");
-                    } // if
+                    } // if end
                 } // for end
 
             } // if end
