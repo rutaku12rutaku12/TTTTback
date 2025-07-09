@@ -62,13 +62,20 @@ public class BankService { // class start
 
             }else if( choose == 4 ){ // 4) 번호 선택에 따른 출력
                 System.out.println("--- 잔고 확인 ---");
-                System.out.println("계좌번호 :");
-                String accountNumber = scan.next();
-                System.out.println("비밀번호 : ");
-                String pwd = scan.next();
-                System.out.println("[잔고] ");
+                Account[] accounts = bs.viewAccount();
+                // addAccount() 반환된 accounts 배열 자료를 accounts에 대입한다.
+                for ( int index = 0 ; index <= accounts.length-1; index++){
+                    Account account = accounts[index];
+                // 하나(객체) = 여러개(객체)배열[번호]
+                    if( account != null){
+                        System.out.println("계좌번호 :"+ account.accountNumber);
+                        String accountNumber = scan.next();
+                        System.out.println("비밀번호 : "+ account.pwd);
+                        String pwd = scan.next();
+                        System.out.println("[잔고] ");} // if end
+                } // for end
 
-            }
+            } // if end
 
 
         }// for 무한루프 end

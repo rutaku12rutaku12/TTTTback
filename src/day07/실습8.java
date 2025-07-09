@@ -34,6 +34,9 @@ public class 실습8 { // class start
         System.out.println( result6 );
 
         // [7]
+        // 자바는 실행/컴파일 단위를 클래스로 처리한다. 모든 코드는 클래스 안에 존재해야한다.
+        // 정수 하나를 매개변수로 받아
+
         Visualizer output = new Visualizer();
         String result7 = output.getStars(3);
         System.out.println(result7);

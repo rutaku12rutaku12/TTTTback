@@ -28,7 +28,12 @@ public class BankController { // class start
     Account[] viewAccount(){
         return accounts;
     }
-
     // accounts 배열 전체를 반환(return)
     // accounts 타입은 Account[]
+
+    // 2-3 입금 메소드
+    //boolean pluscount(){}
+
+    // 2-4 출금 메소드
+
 } // class end

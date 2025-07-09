@@ -27,9 +27,11 @@ public class BoardController { // class start
     Board[] doGet(){
         return boards;
     }
-
     // boards 배열 전체를 반환(return)
     // boards 타입은 Board[]
+
+
+
 } // class end
 
 
