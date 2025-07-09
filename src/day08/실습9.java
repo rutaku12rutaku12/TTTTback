@@ -1,5 +1,7 @@
 package day08;
 
+import java.util.Scanner;
+
 public class 실습9 { // class start
     public static void main(String[] args) { // main start
 
@@ -28,6 +30,45 @@ public class 실습9 { // class start
 
         // [5]
         Goods good1 = new Goods();
+        System.out.printf("%s\t %d \n",good1.name,good1.price);
+        Goods good2 = new Goods("콜라",2000);
+        System.out.printf("%s\t %d \n",good2.name,good2.price);
+
+        // [6]
+
+        Member member1 = new Member();
+        System.out.printf("%s \t%s\n", member1.id,member1.isLogin);
+
+        // [7]
+        Television tv1 = new Television( 7, 20);
+        System.out.printf("%d \t %d \n",tv1.channel,tv1.volume);
+
+        // [8]
+        Player 선수1= new Player("손흥민" , 90 , 95);
+        Player 선수2 = new Player("이강인", 85, 92);
+        System.out.printf("%s \t %d \t %d \n",
+                선수1.name,선수1.power,선수1.speed);
+        System.out.printf("%s \t %d \t %d \n",
+                선수2.name,선수2.power,선수2.speed);
+
+        // [9]
+        MenuItem menu1 = new MenuItem("김치찌개",8000,true);
+        if(menu1.isSignature == true ){
+            System.out.println("[대표메뉴]"+menu1.name+" : "+menu1.price+"원");}
+
+        // [10]
+        Scanner scan = new Scanner(System.in);
+        System.out.println("이름 : "); String name = scan.next();
+        System.out.println("나이 : "); int age = scan.nextInt();
+        System.out.println("MBTI : "); String mbti = scan.next();
+        UserProfile user1 = new UserProfile(name , age , mbti);
+        System.out.printf("%s \t %d \t %s \n", user1.name , user1.age , user1.mbti );
+
+
+
+
+
+
 
 
 
