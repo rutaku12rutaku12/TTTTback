@@ -70,7 +70,7 @@ public class boardService4 { // class start
 
         // (5) .
             // 1. content 와 writer 멤버변수를 갖는 객체 필요하므로 Board 클래스 선언
-            // 2. board 클래스 객체를 100개 저장하는 배열을 controller 선언 * 추후 : 데이터베이스(외부저장소) 활용
+            // 2. Board 클래스 객체를 100개 저장하는 배열을 controller 선언 * 추후 : 데이터베이스(외부저장소) 활용
             // 3. doPost() 와 doGet() 메소드를 호출하기 위한 객체 생성
         BoardController bs = new BoardController();
         for( ; ; ) { // (1) 무한루프 : 프로그램 계속적으로 실행하기 위해서
