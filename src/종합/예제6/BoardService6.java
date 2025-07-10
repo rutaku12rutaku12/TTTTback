@@ -19,8 +19,7 @@ public class BoardService6 { // class start
                 String content = scan.next();
                 System.out.print("작성자 : ");
                 String writer = scan.next();
-                boolean result =
-                BoardController.doPost( content , writer ); // 클래스명.static메소드명( );
+                boolean result = BoardController.doPost( content , writer ); // 클래스명.static메소드명( );
                 if (result ){System.out.println("[안내] 글쓰기 성공");}
                 else {System.out.println("[경고] 글쓰기 실패");}
             }else if( choose == 2 ) {

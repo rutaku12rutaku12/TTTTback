@@ -16,7 +16,7 @@ public class BoardController { // class start
         for( int i = 0 ; i<boards.length ; i++){
             if( boards[i] == null ){
                 boards[i] = board;
-                return true; // 저장공간 뜻을 true로 부여하여 반환
+                return true; // 저장성공 뜻을 true로 부여하여 반환
             } // if end
         } // for end
         return false; // 저장실패 뜻을 false 로 부여하여 반환

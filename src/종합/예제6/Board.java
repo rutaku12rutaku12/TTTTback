@@ -10,14 +10,14 @@ public class Board { // class start
     // 자동 : 해당 클래스에서 오른쪽클릭 -> [생성] -> [생성자] -> 모든 멤버변수 복수선택(ctrl or shift)후 -> [확인]
     // 1) 기본생성자
     public Board(){}
-    // 2) 전체매개변수를 갖는 생성ㅈ아
+    // 2) 전체매개변수를 갖는 생성자
     public Board(String content, String writer) {
         this.content = content;
         this.writer = writer;
     }
 
     // 3. 메소드 :
-    // 1) private 으로 선언된 멤버변수를 외부(다른클래스)로부터 접글할수 있도록 getter/setter 지원한다.
+    // 1) private 으로 선언된 멤버변수를 외부(다른클래스)로부터 접근할수 있도록 getter/setter 지원한다.
     // 자동 : 해당 클래스에서 오른쪽 -> [생성] -> [getter 및 setter] -> 모든 멤버변수 복수선택후 -> [확인]
     public String getContent() {
         return content;
