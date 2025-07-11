@@ -1,0 +1,38 @@
+싱글톤 만들기 예시 (과제5)
+
+1. 패키지 파일 만들기
+
+    과제5 패키지
+        - controller 패키지
+                - WaitingController
+        - model 패키지
+            -dao 패키지
+                - WaitingDao
+            -dto 패키지
+                - WaitingDto
+        - view 패키지
+                - WaitingView
+        AppStart
+
+2. view Dao Controller 파일들에 싱글톤 만들기
+
+    private 클래스명(){}
+    private static final 클래스명 instance = new 클래스명();
+    public static 클래스명 getInstance(){
+        return instance;
+    }
+
+3. 각 싱글톤을 호출하고 저장하는 멤버변수 선언
+   * Dao 에서는 할 필요 없음
+
+4. view에서 무한루프 입력만들고 AppStart 클래스에서 최초의 추력 메소드를 호출한다.
+
+5. 요구사항에 필요한 메모리 설계//
+   1)Dto로 가서 멤버변수 구성
+   2)기본,풀생성자, getter and setter toString 만들기  (알트+인써트)
+
+6. DAO Controller View 순서대로 등록메소드 작성
+
+7. DAO Controller View 순서대로 조회메소드 작성
+
+ 
