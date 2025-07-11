@@ -31,7 +31,7 @@ public class BankService { // class start
 
                 // 6) * addAccount() 메소드를 호출해서 등록 처리 후 결과를 받는다.
 
-                boolean result = // addAccount() 메소드가 실행후 결과르 result에 저장.
+                boolean result = // addAccount() 메소드가 실행후 결과를 result에 저장.
                     bs.addAccount( accountNumber , pwd ); // 입력받은 두 값을 인수로 전달
                 if( result == true ) { // addAccount() 에서 true 반환이면
                     System.out.println("계좌등록 성공");
@@ -40,6 +40,7 @@ public class BankService { // class start
                 }
             }else if( choose == 2 ){ // 4) 번호 선택에 따른 출력
                 System.out.println("--- 입금 ---");
+
                 System.out.println("계좌번호 :");
                 String accountNumber = scan.next();
                 System.out.println("비밀번호 : ");

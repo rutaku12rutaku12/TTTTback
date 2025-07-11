@@ -32,8 +32,13 @@ public class BankController { // class start
     // accounts 타입은 Account[]
 
     // 2-3 입금 메소드
-    //boolean pluscount(){}
+    boolean plusCount(String accountNumber, String pwd , int plus ){
 
+        return false;
+    }
     // 2-4 출금 메소드
+    boolean minusCount(String accountNumber, String pwd , int minus ){
 
+        return false;
+    }
 } // class end
