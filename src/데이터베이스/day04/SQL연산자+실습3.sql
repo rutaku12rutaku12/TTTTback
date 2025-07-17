@@ -190,7 +190,7 @@ select title, price , stock from books where price>=15000 and stock>=10;
 select title , genre from books where genre='컴퓨터' or genre= '경제';
 select title , genre from books where genre in('컴퓨터' , '경제');
 -- [문제 5] books 테이블에서 재고(stock) 정보가 없는(NULL) 도서의 title을 조회하세요.
-select title from books where stock is null;
+select title from books where stock is null; 	# = null 대신에 is null 사용하자.
 -- [문제 6] books 테이블에서 도서명(title)에 '코리아' 라는 단어가 포함된 도서를 조회하세요. (LIKE 사용)
 select * from books where title like '%코리아%';
 -- [문제 7] books 테이블에서 저자명(author)이 '김'으로 시작하는 3글자인 도서의 title과 author를 조회하세요. (LIKE 사용)
@@ -208,7 +208,7 @@ select title , author from books where title like '%자%';
 -- [문제 13] books 테이블에서 장르(genre)가 '소설'과 '역사'가 아닌 도서들의 모든 정보를 조회하세요. (NOT IN 사용)
 select * from books where genre not in ( '소설' , '역사' ); 
 -- [문제 14] books 테이블에서 장르가 '컴퓨터'이고 가격이 20000원 미만이며, 재고가 20권 이상인 도서의 title을 조회하세요.
-select title from books where genre= '컴퓨터' and price<20000;
+select title from books where genre= '컴퓨터' and price<20000 and stock>=20;
 -- [문제 15] books 테이블의 모든 도서 정보를 장르(genre)의 가나다순(오름차순)으로 정렬하되, 같은 장르 내에서는 가격(price)이 비싼 순(내림차순)으로 정렬하세요.
 select * from books order by genre asc, price desc;
 -- [문제 16] books 테이블에서 저자명(author)이 '이'씨가 아닌 도서의 title과 author를 조회하세요.
