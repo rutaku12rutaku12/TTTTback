@@ -25,7 +25,7 @@ public class 실습12 { // class start
 
         // [5]
         Shape shape = new Circle();
-        shape.draw(); // 객체 Circle의 타입만 Shape로 저장 되고 메소드 실행은 오버라이딩되므로 Circle내 메소드가 실행된다.
+        shape.draw(); // 객체 Circle의 타입만 Shape로 선언 되고 메소드 실행은 오버라이딩되므로 Circle내 메소드가 실행된다.
 
 
         // [6]
