@@ -25,8 +25,8 @@ public class 실습12 { // class start
 
         // [5]
         Shape shape = new Circle();
-        shape.draw(); // 객체 Circle를 생성해서 Shape 타입의 shape 변수에 저장후
-                      // circle의 객체의 메소드가 실행된다.
+        shape.draw(); // 객체 Circle의 타입만 Shape로 저장 되고 메소드 실행은 오버라이딩되므로 Circle내 메소드가 실행된다.
+
 
         // [6]
         Vehicle vehicle = new Bus();
