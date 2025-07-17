@@ -53,7 +53,7 @@ public class 실습12 { // class start
         // [9]   obj.name과 obj.method()를 각각 호출했을 때의 결과를 확인하고, 왜 다른 결과가 나오는지 주석으로 설명하세요.
         SuperClass obj = new SubClass();
         System.out.println(obj.name); // SubClass 객체를 SuperClass 타입 obj 변수에 저장했고 타입 SuperClass 변수 obj 이므로 '상위' 값이 나왔다.
-        obj.method(); // 위와 같지만 메소드는 태생의 타입에 메소드가 실행된다. == 이것이 오버라이딩
+        obj.method(); // 위와 같지만 메소드는 태생의 타입에 메소드가 실행된다. => 이것이 오버라이딩
 
         // [10]
         Laptop lap = new Laptop();
