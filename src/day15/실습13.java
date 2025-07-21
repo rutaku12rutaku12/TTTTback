@@ -6,7 +6,7 @@ public class 실습13 { // class start
         // [1]
         Cat cat = new Cat();
         Dog dog = new Dog();
-        cat.makeSound();
+        cat.makeSound(); // 재사용 안하면 변수없이도 가능 new Cat().makeSound();
         dog.makeSound();
 
         // [2]
