@@ -1,12 +1,46 @@
 package day16;
 
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileOutputStream;
+import java.io.*;
 import java.util.Scanner;
 
 public class 실습15 { // class start
     public static void main(String[] args) { // main start
+        // * 파일처리 목적 : (저장) 자바 외 저장소로 영구저장 가능하다.
+
+        // 문제1 : ( 출력 : 자바 --> 파일 )
+        // (1) 파일의 경로 저장
+//        String path = "src/diary.txt";
+//        try { // try { 예외가 발생할것 같은 또는 일반예외 }
+//            // (2) 출력 객체 생성 , 일반예외 발생 , try ~ catch
+//            FileOutputStream fout = new FileOutputStream(path);
+//            // (3) 출력할 내용
+//            String str = "오늘 날씨는 맑았다. 자바 공부는 재미있다.";
+//            // (4) 출력할 내용 --> 바이트 배열 변환 ?? 스트링(데이터 이동경로-바이트단위)
+//            byte[] outBytes = str.getBytes();
+//            // (5) 바이트 내보내기
+//            fout.write( outBytes );
+//        }catch ( FileNotFoundException e ) { // catch( 예외클래스명 변수명 ) { 예외일때코드 }
+//            System.out.println(e);
+//        }catch (IOException e) {System.out.println(e);}
+//
+//        // 문제2 : ( 입력 : 파일 --> 자바 )
+//        // (1) 파일의 경로 지정 : 문제1과 같아 생략.
+//        // (2) 입력 객체  생성
+//        try {
+//
+//            FileInputStream fin = new FileInputStream(path);
+//            // (3) 가져올 바이트를 저장할 배열 선언 (파일 크기만큼)
+//            File file = new File(path); // 파일 객체 , .length() : 파일의 (long)용량 반환 함수
+//            byte[] inBytes = new byte[(int) file.length()];
+//            // (4) 읽어온 바이트를 배열에 저장 , 일반예외 발생 , try ~ catch
+//            fin.read(inBytes);
+//            // (5) 읽어온 바이트를 문자열로 반환
+//            String inStr = new String( inBytes );
+//            System.out.println( inStr );
+//        }catch (Exception e){
+//            System.out.println(e);
+//        }
+
 //        [JAVA] 실습15 : 파일 처리
 //[ 문제 ] 아래 파일 처리 관련 문제를 해결하시오.
 //[ 제출방법 ] 코드가 작성된 파일이 위치한 깃허브 상세 주소를 제출하시오.
@@ -63,9 +97,37 @@ public class 실습15 { // class start
 ////        1. FileOutputStream을 사용하여 src/visit_log.txt 파일을 여세요.
 ////        2. Scanner로 방문자 이름을 입력받아, "OOO님이 방문했습니다.\n" 형식의 문자열을 visit_log.txt 파일의 기존 내용 뒤에 추가하세요.
 ////        3. 프로그램을 여러 번 실행하여 방문 기록이 계속 누적되는지 확인하세요.
+
+
+//         (1) 문자열 입력받기
+//        try {
+//
+//            System.out.println("이름:");
+//            String name = scan.next();
+//            String outStr = name + "님이 방문했습니다.\n"; // 2. 문자열 연결 : +
+//            String path2 = "src/visit_log.txt"; // 3. 파일 경로 지정
+//            File file2 = new File(path2); // 4. 지정 경로에 파일 존재여부 확인
+//            // 방안1]
+////                String inStr = null; // 공백 문자열
+////                if(file2.exists()) { // 파일 존재하면 입력
+////                    FileInputStream finput = new FileInputStream( path2 ); // 5. 파일 입력 객체
+////                    byte[] bytes = new byte[ (int) file2.length()]; // 6. 파일 용량 만큼 배열 선언
+////                    finput.read(bytes); // 7. 읽어오기
+////                    inStr = new String(bytes); // 8. 문자열로 변환
+////                }
+////                inStr += outStr; // 9. 불러온 문자열과 입력받은 문자열 연결
+////                FileOutputStream foutput = new FileOutputStream(path2); // 10. 출력객체
+////                byte[] bytes = inStr.getBytes(); // 11. 바이트로 변환
+////                foutput.write(bytes); // 12. 바이트 내보내기
+////            // 방안2]
+//                FileOutputStream foutput = new FileOutputStream(path2 , true);
+//                foutput.write( outStr.getBytes());
+//        }catch (Exception e){
+//            System.out.println(e);
+//        }
 //        try {
 //            System.out.println("방문자 이름 : ");
-//        String visitor = scan.nextLine();
+//        String visitor = scan.next();
 //            System.out.println(visitor+"님이 방문했습니다.\n");
 //        FileOutputStream fout = new FileOutputStream( "src/visit_log.txt",true);
 //        byte[] outByte = visitor.getBytes();

@@ -6,6 +6,29 @@ https://docs.google.com/spreadsheets/d/1VZlYotnHXxswGaNz_CbEjfRD_kcgvFYWNtLaWUvn
 ArrayList :
 https://docs.google.com/spreadsheets/d/1IQKpP2uS_wG5pJMabRPHEgjBoNxTaWqwmbPd2yOyJpk/edit?pli=1&gid=130057393#gid=130057393
 
+    // 1. 멤버변수
+        // 1) private
+
+    // 2. 생성자
+       // 1) 기본생성자
+       // 2) 전체생성자
+
+    // 3. 메소드
+        // 1.) setter
+        // 2.) getter
+        // 3.) toString
+
+
+    // (*) 싱글톤
+    private 클래스명(){}
+    private static final 클래스명 instance = new 클래스명();
+    public static 클래스명 getInstance(){
+        return instance;
+    }
+
+
+
+
 1. 패키지 파일 만들기
 
     과제5 패키지
