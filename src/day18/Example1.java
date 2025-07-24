@@ -16,5 +16,6 @@ public class Example1 {
         // (4) 연동된 db에
         userDao.userSelect();
 
+
     } // main end
 } // class end

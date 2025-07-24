@@ -11,7 +11,7 @@ import java.util.List;
 public class Example1 { // class start
     public static void main(String[] args) { // main start
 
-        // OpenCSV 라이브러리 : 목적 - CSV 규칙에 따른 자동 분해/분리
+        // 자바연동yOpenCSV.txt : 목적 - CSV 규칙에 따른 자동 분해/분리
         // 각종 자바 관련 라이브러리 공유 : https://mvnrepository.com/
         // (1) OpenCSV : https://mvnrepository.com/artifact/net.sf.opencsv/opencsv/2.3
         // (2) [JAR] 다운로드 버튼 클릭
