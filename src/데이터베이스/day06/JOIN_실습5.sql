@@ -181,12 +181,12 @@ select p.제품명,pc.카테고리명,s.재고수량 from product p join pcatego
 select * from pcategory pc;
 select * from product p;
 select * from pcategory pc inner join product p on pc.카테고리번호_pk = p.카테고리번호_fk ;
-select pc.카테고리명,p.제품명 from pcategory pc left join product p on pc.카테고리번호_pk = p.카테고리번호_fk ; -- 모르겟슴 ㅇㅅㅇ;
+select pc.카테고리명,p.제품명 from pcategory pc left outer join product p on pc.카테고리번호_pk = p.카테고리번호_fk ; -
 -- [문제 7] 재고가 한 번도 등록되지 않은 제품의 제품명을 조회하세요. (조회결과: 1개 레코드)
 select * from stock s;
 select * from product p;
 select * from product p inner join stock s on p.제품번호_pk = s.제품번호_fk;
-select p.제품명, s.제품번호_fk  from product p left join stock s on p.제품번호_pk = s.제품번호_fk;
+select p.제품명, s.제품번호_fk from product p left outer join stock s on p.제품번호_pk = s.제품번호_fk where s.제품번호_fk is null;
 
 -- [문제 8] 각 카테고리별로 총 재고 수량의 합계를 카테고리명과 함께 조회하세요. (조회결과: 3개 레코드)
 select * from stock s;
