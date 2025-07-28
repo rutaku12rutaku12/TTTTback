@@ -6,7 +6,7 @@ import java.util.concurrent.Executors;
 
 public class Example4 {
     public static void main(String[] args) {
-        /* [ 스레드풀 ]
+        /* [ 스레드풀 ] https://docs.google.com/presentation/d/1NVyxUequqainZ9dBpJ2jQCONJzh2k1bKD9muqJVxcjM/edit?slide=id.g373bc43cea8_22_0#slide=id.g373bc43cea8_22_0
             1. 정의 : 미리 일정 개수의 스레드를 생성하고 필요에 따라 재사용하는 방식
             2. 목적 : 작업이 들어올때 마다 새로운 스레드가 아닌 기존 스레드 이용한다.
             3. 효과 : 스레드 재사용, 자원 효율성, 과부하 방지 등등
