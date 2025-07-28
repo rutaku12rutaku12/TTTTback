@@ -1,0 +1,35 @@
+    // 1. 멤버변수
+        // 1) private
+
+    // 2. 생성자
+       // 1) 기본생성자
+       // 2) 전체생성자
+
+    // 3. 메소드
+        // 1.) setter
+        // 2.) getter
+        // 3.) toString
+
+
+    // *) 싱글톤
+    private 클래스명(){}
+    private static final 클래스명 instance = new 클래스명();
+    public static 클래스명 getInstance(){
+        return instance;
+    }
+
+            // 1. SQL 작성
+            // 2. SQL 기재
+            // 3. SQL 매개변수 대입
+            // 4. SQL 실행
+            // 5. SQL 결과에 따른 로직/리턴/확인
+
+
+        // 1.유효성검사  2.객체화 pass
+        // 3. dto를  dao에게 전달후 결과를 받는다.
+        // 4. 결과를 view에게 리턴한다.
+
+
+        // 1. 입력받기
+        // 2. controller 전달 // 3. 전달후 리턴값 저장
+        // 4. 리턴된 값 에 따른 출력
